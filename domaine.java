@@ -1,17 +1,18 @@
 package address;
 
-import patientVaccine.Vaccine;
+import Main.VaccinatedP;
 
 public class domaine {
  private String domaineName;
  
 //Default Constructor
  public domaine() 
- {}
+ {super();}
  
 //Copy Constructor
- domaine(domaine Domaine)
+ public domaine( domaine Domaine)
  {
+   super();
    domaineName = Domaine.domaineName;
  }
 

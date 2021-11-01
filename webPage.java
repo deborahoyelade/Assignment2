@@ -12,8 +12,7 @@
 
 package address;
 
-public class webPage {
-	    String domaineName;
+public class webPage extends domaine {
 	    String ressourceName;
 	
 	//Default Constructor
@@ -21,32 +20,25 @@ public class webPage {
 	{ super(); }
 	
 	//Parameterized Constructor
-	webPage (String domaineName, String ressourceName){
+	webPage (String ressourceName){
 		super();
-		this.domaineName=domaineName;
 	    this.ressourceName = ressourceName;
 	}
 	
 	//Copy Constructor
 	webPage(webPage WebPage)
 	{
-	  domaineName = WebPage.domaineName;
+	  super();
 	  ressourceName = WebPage.ressourceName;
 	}
 	
 	//Sets the variables
-	public void setDomaineName(String domaineName) {
-		this.domaineName = domaineName;
-	}
 	
 	public void setRessourceName(String ressourceName) {
 		this.ressourceName = ressourceName;
 	}
 	
 	//Retrieves the variables
-	public String getDomaineName(){
-	    return this.domaineName;
-	}
 	
 	public String getRessourceName(){
 	    return this.ressourceName;
@@ -68,8 +60,6 @@ public class webPage {
     		} else if (!ressourceName .equals(other.ressourceName))
     			return false;
 		} else if (!ressourceName.equals(other.ressourceName))
-			return false;
-		if (domaineName != other.domaineName) 
 			return false;
 		
 		return true;
