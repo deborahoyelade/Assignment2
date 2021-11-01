@@ -61,7 +61,8 @@ public class civicAddress {
 	//ToStrings
 	@Override
 	public String toString() {
-		return "The civic address is: "+ street + ", " + province + ", " + postalCode;
+		return "CivicAddress [streetAddress=" + getStreetAddress()+ "City = " + getCity() + "province=" + getProvince() + ", postalCode=" + getPostalCode()
+				+ "]";
 	}
  
 	
