@@ -1,6 +1,7 @@
 package address;
 
-public class EmailAddress extends webPage {
+
+public class EmailAddress extends domaine {
 	private String userName;
 	private String tld;
 	
@@ -18,6 +19,7 @@ public class EmailAddress extends webPage {
 	//Copy Constructor
 	   EmailAddress(EmailAddress emailAddress)
 	   {
+		   super();
 		   userName = emailAddress.userName;
 		   tld = emailAddress.tld;
 	   }
